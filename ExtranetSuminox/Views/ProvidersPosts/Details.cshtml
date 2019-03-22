@@ -1,0 +1,138 @@
+﻿@model ExtranetSuminox.Models.ProvidersPost
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProvidersPost</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Finish.Finish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Finish.Finish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FinPost.RangeFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FinPost.RangeFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Form.Form)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Form.Form)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IniPost.RangeIni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IniPost.RangeIni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaterialType.MaterialType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaterialType.MaterialType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Payment.Payment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Payment.Payment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProviderType.ProviderType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProviderType.ProviderType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProviderNamePost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProviderNamePost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.origin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.origin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.plant)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.plant)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.certificate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.certificate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.web)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.web)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdProvidersPost }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,26 @@
+﻿@model ExtranetSuminox.Models.RangeFinPost
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RangeFinPost</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RangeFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RangeFin)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdRangeFinPost }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

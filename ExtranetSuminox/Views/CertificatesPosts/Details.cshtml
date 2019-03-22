@@ -1,0 +1,82 @@
+﻿@model ExtranetSuminox.Models.CertificatesPost
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CertificatesPost</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Country.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProviderNamePost.ProviderNamePost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProviderNamePost.ProviderNamePost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Factura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Factura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Oc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Oc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Colada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Colada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Calidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Calidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Publicacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Publicacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Certificado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Certificado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

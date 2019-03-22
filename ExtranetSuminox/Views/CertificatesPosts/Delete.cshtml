@@ -1,0 +1,88 @@
+﻿@model ExtranetSuminox.Models.CertificatesPost
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CertificatesPost</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Country.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProviderNamePost.ProviderNamePost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProviderNamePost.ProviderNamePost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Factura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Factura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Oc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Oc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Colada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Colada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Calidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Calidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Publicacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Publicacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Certificado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Certificado)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,117 @@
+﻿@model IEnumerable<ExtranetSuminox.Models.ProvidersPost>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Finish.Finish)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FinPost.RangeFin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Form.Form)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IniPost.RangeIni)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaterialType.MaterialType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Payment.Payment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProviderType.ProviderType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProviderNamePost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.origin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.plant)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.certificate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.web)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Finish.Finish)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FinPost.RangeFin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Form.Form)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IniPost.RangeIni)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaterialType.MaterialType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Payment.Payment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProviderType.ProviderType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProviderNamePost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.contact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.origin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.plant)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.certificate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.web)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdProvidersPost }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdProvidersPost }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdProvidersPost })
+        </td>
+    </tr>
+}
+
+</table>

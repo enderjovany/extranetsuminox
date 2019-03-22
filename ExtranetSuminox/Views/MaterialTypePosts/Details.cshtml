@@ -1,0 +1,26 @@
+﻿@model ExtranetSuminox.Models.MaterialTypePost
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MaterialTypePost</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MaterialType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaterialType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdMaterialTypePost }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

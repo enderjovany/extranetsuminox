@@ -1,0 +1,75 @@
+﻿@model IEnumerable<ExtranetSuminox.Models.CertificatesPost>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Country.Country)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProviderNamePost.ProviderNamePost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Factura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Oc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Colada)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Calidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Publicacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Certificado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Country.Country)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProviderNamePost.ProviderNamePost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Factura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Oc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Colada)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Calidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Publicacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Certificado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
